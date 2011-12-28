@@ -1,27 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title></title>
-<style type="text/css">
-h1, h2, h3, h4, div#donate {text-align:center;}
-h1{font-size:100pt}
+  <title>#NVGD</title>
+  <style type="text/css">
+  h1, h2, h3, h4, div#donate {text-align:center;}
+  h1{font-size:100pt}
+  #dewplayer {visibility:hidden}
+  </style>
 
-</style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script>
-	!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
-</script>
-<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script>
+  	!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+  </script>
+  <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 
-<script type="text/javascript">
-$(document).ready(function() { $("#various1").fancybox();
-});
-</script>
 </head>
 
 <body class="nvgd">
+  <div id="dewplayer">
+
+    <object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=snow.mp3&autostart=1" width="160" height="20" id="dewplayer-mini">
+      <param name="movie" value="dewplayer-mini.swf?mp3=snow.mp3&autostart=1" />
+    </object>
+
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function() { $("#various1").fancybox();
+  });
+  </script>
+  <script type="text/javascript" src="./snow.js"></script>
 
 <h1>#NVGD</h1>
 <h2>31 декабря, 22:00</h2>
@@ -54,7 +62,13 @@ $(document).ready(function() { $("#various1").fancybox();
  (function() {   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
 </script>
 
-<div style="display: none;"> <div id="inline1" style="width:500px;height:610px;overflow:auto;"> <div id="eventreg17153"> <script type="text/javascript"> tpShowRegButtons = function(){ if(document.getElementById("tp-select-ticket-type").length){ tpRegSelector = document.getElementById("tp-select-ticket-type"); if(tpRegSelector[tpRegSelector.selectedIndex].className.indexOf("tp-ticket-paid")>-1){ if(document.getElementById("tp-paid-registration")){ document.getElementById("tp-paid-registration").style.display="block"; } document.getElementById("tp_submit_send").style.display="none"; document.getElementById("tp_submit_send").value="Продолжить"; if(document.getElementById("submit_cash")) if(tpRegSelector[tpRegSelector.selectedIndex].className.indexOf("tp-ticket-pay-later")>-1){ document.getElementById("submit_cash").style.display="inline"; } else { document.getElementById("submit_cash").style.display="none"; } } else { if(document.getElementById("tp-paid-registration")){ document.getElementById("tp-paid-registration").style.display="none"; } document.getElementById("tp_submit_send").style.display="inline"; document.getElementById("tp_submit_send").value="Зарегистрироваться"; } } } onPromoCodeLinkClick = function(){ promoCodeLink = document.getElementById("promo-code-link"); promoCodeBlock = document.getElementById("promo-code-block"); promoCodeLink.style.display = "none"; promoCodeBlock.style.display = "block"; return false; } </script> <div class="tp-reg-widget" ><form enctype="multipart/form-data" action="http://pochashe.timepad.ru/event/register/17153" class="commonform" method="POST"><input type="hidden" name="httpreferer" value=""/><input type="hidden" name="reforg" value=""/><input type="hidden" name="tpref" value=""/><input type="hidden" name="ref" value=""/><input type="hidden" name="mailid" value=""/><input type="hidden" name="source" value=""/><div class="tp-reg-description" style="margin:15px 20px;font-size:18px;font-weight:bold">Расскажите о себе</div>
+<div style="display: none;"> <div id="inline1" style="width:500px;height:610px;overflow:auto;"> 
+  <div id="eventreg17153">
+  <script type="text/javascript">
+  tpShowRegButtons = function(){ if(document.getElementById("tp-select-ticket-type").length){ tpRegSelector = document.getElementById("tp-select-ticket-type"); if(tpRegSelector[tpRegSelector.selectedIndex].className.indexOf("tp-ticket-paid")>-1){ if(document.getElementById("tp-paid-registration")){ document.getElementById("tp-paid-registration").style.display="block"; } document.getElementById("tp_submit_send").style.display="none"; document.getElementById("tp_submit_send").value="Продолжить"; if(document.getElementById("submit_cash")) if(tpRegSelector[tpRegSelector.selectedIndex].className.indexOf("tp-ticket-pay-later")>-1){ document.getElementById("submit_cash").style.display="inline"; } else { document.getElementById("submit_cash").style.display="none"; } } else { if(document.getElementById("tp-paid-registration")){ document.getElementById("tp-paid-registration").style.display="none"; } document.getElementById("tp_submit_send").style.display="inline"; document.getElementById("tp_submit_send").value="Зарегистрироваться"; } } } 
+  onPromoCodeLinkClick = function(){ promoCodeLink = document.getElementById("promo-code-link"); promoCodeBlock = document.getElementById("promo-code-block"); promoCodeLink.style.display = "none"; promoCodeBlock.style.display = "block"; return false; }
+  </script>
+  <div class="tp-reg-widget" ><form enctype="multipart/form-data" action="http://pochashe.timepad.ru/event/register/17153" class="commonform" method="POST"><input type="hidden" name="httpreferer" value=""/><input type="hidden" name="reforg" value=""/><input type="hidden" name="tpref" value=""/><input type="hidden" name="ref" value=""/><input type="hidden" name="mailid" value=""/><input type="hidden" name="source" value=""/><div class="tp-reg-description" style="margin:15px 20px;font-size:18px;font-weight:bold">Расскажите о себе</div>
 
   <div class="msection"><div class="tp-reg-question"
   style="margin:0 20px 15px 20px;"><div class="tp-reg-label"
